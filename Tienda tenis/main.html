@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+
+<header class="container-fluid">
+    <nav class="navbar navbar-expand-lg">
+        <img class="" src="img/tenis-logo.png" width="50" height="50">
+        <h1 class="nav-element">Tenis</h1>
+        <div class="collapse navbar-collapse links" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link nav-element" href="#">Iniciar sesion</a></li>
+                <li class="nav-item"><a class="nav-link nav-element" href="#">Mi carrito: <span
+                            id="cantidadProductos">0</span></a></li>
+                <li class="nav-item"><a class="nav-link nav-element" href="#">Mi cuenta
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <p class="nav-link dropdown-toggle nav-element" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Categoria
+                    </p>
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Hombres</a></li>
+                        <li><a class="dropdown-item" href="#">Mujeres</a></li>
+                        <li><a class="dropdown-item" href="#">Niños</a></li>
+                        <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<script src="actions.js"></script>
+<script src="css/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+    <main>
+        <div class="container container-marging">
+            <div class="row">
+                <div class="col-2 lateral">
+                    <p>info info info info info info info infoinfoinfo</p>
+                </div>
+                <div class="col">
+                    <div class="container products">
+                        <h4>Más vendido</h4>
+                        <div class="row">
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/mas-vendido-1.jpg" alt="" class="post-img">
+                                        <h4>Jordan</h4>
+                                        <p>Costo: 2368 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/mas-vendido-2.jpg" alt="" class="post-img">
+                                        <h4>Nike</h4>
+                                        <p>Costo: 3651 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/mas-vendido-3.jpg" alt="" class="post-img">
+                                        <h4>adidas</h4>
+                                        <p>Costo: 4386 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/mas-vendido-4.jpg" alt="" class="post-img">
+                                        <h4>Converse</h4>
+                                        <p>Costo: 1345 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/mas-vendido-5.jpg" alt="" class="post-img">
+                                        <h4>Converse</h4>
+                                        <p>Costo: 2113 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container products">
+                        <h4>Hombre</h4>
+                        <div class="row">
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/hombre-puma-1.jpg" alt="" class="post-img">
+                                        <h4>Puma</h4>
+                                        <p>Costo: 1345 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/hombre-adidas-2.jpg" alt="" class="post-img">
+                                        <h4>Adidas</h4>
+                                        <p>Costo: 24135 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/hombre-polo-3.jpg" alt="" class="post-img">
+                                        <h4>Polo</h4>
+                                        <p>Costo: 3152 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/hombre-pirma-4.jpg" alt="" class="post-img">
+                                        <h4>Pirma</h4>
+                                        <p>Costo: 1432 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/hombre-airwalk-5.jpg" alt="" class="post-img">
+                                        <h4>Airwalk</h4>
+                                        <p>Costo: 2377 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container products">
+                        <h4>Mujer</h4>
+                        <div class="row">
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/mujer-puma-1.jpg" alt="" class="post-img">
+                                        <h4>Puma</h4>
+                                        <p>Costo: 2439 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/mujer-sportline-2.jpg" alt="" class="post-img">
+                                        <h4>Sportline</h4>
+                                        <p>Costo: 3185 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/mujer-urban-3.jpg" alt="" class="post-img">
+                                        <h4>Urban</h4>
+                                        <p>Costo: 3152 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/mujer-adidas-4.jpg" alt="" class="post-img">
+                                        <h4>Adidas</h4>
+                                        <p>Costo: 2199 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/mujer-sportline-5.jpg" alt="" class="post-img">
+                                        <h4>Sportline</h4>
+                                        <p>Costo: 1245 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container products">
+                        <h4>Niños</h4>
+                        <div class="row">
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/niños-nike-1.jpg" alt="" class="post-img">
+                                        <h4>Nike</h4>
+                                        <p>Costo: 1238 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/niños-nike-2.jpg" alt="" class="post-img">
+                                        <h4>Nike</h4>
+                                        <p>Costo: 813 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/niños-dorian-3.jpg" alt="" class="post-img">
+                                        <h4>Dorian</h4>
+                                        <p>Costo: 762 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/niños-adidas-4.jpg" alt="" class="post-img">
+                                        <h4>Adidas</h4>
+                                        <p>Costo: 1423 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/niños-falabella-5.jpg" alt="" class="post-img">
+                                        <h4>Falabella</h4>
+                                        <p>Costo: 631 mxn</p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container products">
+                        <h4>Anuncios de ofertas</h4>
+                        <div class="row">
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/anuncio-jordan-1.jpg" alt="" class="post-img">
+                                        <h4>Jordan</h4>
+                                        <h3>OFERTA </h3>
+                                        <p>Costo: <del>4315 mxn</del> <span class="oferta"> 2335 mxn</span></p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/anuncio-adidas-2.jpg" alt="" class="post-img">
+                                        <h4>Adidas</h4>
+                                        <h3>OFERTA </h3>
+                                        <p>Costo: <del>2185 mxn</del> <span class="oferta"> 1665 mxn</span></p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/anuncio-converse-3.jpg" alt="" class="post-img">
+                                        <h4>Converse</h4>
+                                        <h3>OFERTA </h3>
+                                        <p>Costo: <del>3182 mxn</del> <span class="oferta"> 2335 mxn</span></p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/anuncio-union-4.jpg" alt="" class="post-img">
+                                        <h4>Union</h4>
+                                        <h3>OFERTA </h3>
+                                        <p>Costo: <del>2335 mxn</del> <span class="oferta"> 1955 mxn</span></p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="producto">
+                                    <div>
+                                        <img src="img/anuncio-puma-5.jpg" alt="" class="post-img">
+                                        <h4>Puma</h4>
+                                        <h3>OFERTA </h3>
+                                        <p>Costo: <del>2745 mxn</del> <span class="oferta"> 1414 mxn</span></p>
+                                        <button class="btn btn-success" onclick="addCart()">Agregar a
+                                            carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Tenis Tienda contacto</p>
+                <p>correo: tenis-servicio@mail.com</p>
+                <p>Telefono: 953-746-81-32</p>
+
+            </div>
+            <div class="col">
+                <p>Como llegar:</p>
+                <section>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3299.2482739618877!2d-102.71855326680327!3d21.846687381820534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429cc030d8700b3%3A0x50fce6b9d5dc1103!2sC.%20Crist%C3%B3bal%20Col%C3%B3n%2C%20Zona%20Centro%2C%2020800%20Calvillo%2C%20Ags.!5e0!3m2!1ses!2smx!4v1695765154012!5m2!1ses!2smx"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
